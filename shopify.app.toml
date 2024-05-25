@@ -3,7 +3,7 @@
 client_id = "9a85168cd2da3407f65ac23b4320e896"
 name = "remix-chat-tutorial"
 handle = "remix-chat-tutorial"
-application_url = "https://ge-remark-competitive-proportion.trycloudflare.com"
+application_url = "https://linux-reporters-prepare-billion.trycloudflare.com"
 embedded = true
 
 [build]
@@ -13,13 +13,13 @@ include_config_on_deploy = true
 
 [access_scopes]
 # Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
-scopes = "write_products"
+scopes = "read_inventory,read_products,write_customers,write_discounts,write_products"
 
 [auth]
 redirect_urls = [
-  "https://ge-remark-competitive-proportion.trycloudflare.com/auth/callback",
-  "https://ge-remark-competitive-proportion.trycloudflare.com/auth/shopify/callback",
-  "https://ge-remark-competitive-proportion.trycloudflare.com/api/auth/callback"
+  "https://linux-reporters-prepare-billion.trycloudflare.com/auth/callback",
+  "https://linux-reporters-prepare-billion.trycloudflare.com/auth/shopify/callback",
+  "https://linux-reporters-prepare-billion.trycloudflare.com/api/auth/callback"
 ]
 
 [webhooks]
