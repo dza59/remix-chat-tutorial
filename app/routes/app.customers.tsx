@@ -8,15 +8,14 @@ import { authenticate } from "~/shopify.server";
 
 export const action: ActionFunction = async ({ request }) => {
   const { admin } = await authenticate.admin(request);
+  console.log("starting action!!!!!!!!!!!!!");
 
   const formData = await request.formData();
-
   const email = formData.get("email");
   const name = formData.get("name");
   console.log(email, name);
 
   try {
-    console.log("starting admin graphql");
     const response = await admin.graphql(
       `#graphql
             mutation customerCreate($input: CustomerInput!) {
@@ -47,22 +46,19 @@ export const action: ActionFunction = async ({ request }) => {
             }`,
       {
         variables: {
-          input: {
+          "input": {
             email: email,
-            phone: "+17066765434",
+            phone: "+16465555566",
             firstName: name,
-            lastName: "tapia",
-            acceptsMarketing: true,
+            lastName: "Lastname",
             addresses: [
               {
-                address1: "905 BRICKELL BAY DR",
-                city: "Miami",
-                province: "FL",
-                phone: "1234911030",
-                zip: "33131",
-                lastName: "paul",
-                firstName: "richard",
-                country: "USA",
+                address1: "412 fake st",
+                city: "Ottawa",
+                phone: "+16469999988",
+                zip: "A1A 4A1",
+                lastName: "Lastname",
+                firstName: "Steve",
               },
             ],
           },
@@ -71,9 +67,9 @@ export const action: ActionFunction = async ({ request }) => {
     );
 
     if (response.ok) {
-      console.log("hit");
+      console.log("hit ok ");
       const data = await response.json();
-      console.log(data);
+      //   console.log(data);
 
       await createCustomer({
         email: email,

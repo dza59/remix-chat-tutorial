@@ -3,7 +3,7 @@
 client_id = "9a85168cd2da3407f65ac23b4320e896"
 name = "remix-chat-tutorial"
 handle = "remix-chat-tutorial"
-application_url = "https://linux-reporters-prepare-billion.trycloudflare.com"
+application_url = "https://different-barriers-disk-owners.trycloudflare.com"
 embedded = true
 
 [build]
@@ -17,9 +17,9 @@ scopes = "read_inventory,read_products,write_customers,write_discounts,write_pro
 
 [auth]
 redirect_urls = [
-  "https://linux-reporters-prepare-billion.trycloudflare.com/auth/callback",
-  "https://linux-reporters-prepare-billion.trycloudflare.com/auth/shopify/callback",
-  "https://linux-reporters-prepare-billion.trycloudflare.com/api/auth/callback"
+  "https://different-barriers-disk-owners.trycloudflare.com/auth/callback",
+  "https://different-barriers-disk-owners.trycloudflare.com/auth/shopify/callback",
+  "https://different-barriers-disk-owners.trycloudflare.com/api/auth/callback"
 ]
 
 [webhooks]
